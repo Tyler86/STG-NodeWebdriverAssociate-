@@ -7,7 +7,7 @@ var until = webdriver.until;
 
 
 describe("challenge1 suite", function(){
-   this.timeout(20000);
+   this.timeout(200000);
    var driver;
    before(function () {
        // initializing chrome driver

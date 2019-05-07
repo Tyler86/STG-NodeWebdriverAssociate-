@@ -40,22 +40,6 @@ describe("challenge1 suite", function(){
                 });
             }, 15000);
     });
-
-    
-
-    // it("find search term", function(done){
-
-    //     setTimeout(() => {
-       
-    //         return driver.getPageSource().then(function(bodyText){
-    //             bodyText.includes("PORSCHE");
-    //             assert.equal(bodyText,true,"Failed to find a porsche");
-    //         })    
-        
-    //     }, 15000);
-        
-    // });
-
 });
 
 
