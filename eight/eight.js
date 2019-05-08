@@ -1,6 +1,5 @@
 require('chromedriver');
 var webdriver = require('selenium-webdriver');
-var request = require('request');
 var assert = require("chai").assert;
 var By = webdriver.By;
 var Key = webdriver.Key;
@@ -10,8 +9,10 @@ var setup = require('../common/setup');
 var tearDown = require('../common/tearDown.js');
 var screenshot = require('../common/takeScreenShots.js');
 var customWaits = require('../common/customWaits.js');
-
 var driver;
+
+
+
 
 
 describe("challenge1 suite", function () {
@@ -23,15 +24,14 @@ describe("challenge1 suite", function () {
    });
 
    after(async function () {
+
    });
 
 
 
    it("connect to service", async function () {
-        var headers 
+
+
    });
-
-
-
 
 });
