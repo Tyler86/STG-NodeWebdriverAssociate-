@@ -108,9 +108,10 @@ async function delayPage(){
 }
 
 function takeScreenShot(name){
-  let currentTime =  new Date().getMilliseconds; //converts date into a string
-
+  let currentTime  ;// =new Date().getMilliseconds || ""; //converts date into a string
+  //let imageName = '.\/screenshots\/'+ name +currentTime+'.jpg'
   let imageName = '.\/screenshots\/'+ name +currentTime+'.jpg'
+
   driver.takeScreenshot().then(function (base64Image) {
     var decodedImage = new Buffer(base64Image, 'base64');
     fs.writeFile(imageName, decodedImage, function(err) {});

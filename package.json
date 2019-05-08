@@ -1,0 +1,27 @@
+{
+  "name": "automation-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tyler86/STG-NodeWebdriverAssociate-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tyler86/STG-NodeWebdriverAssociate-/issues"
+  },
+  "homepage": "https://github.com/Tyler86/STG-NodeWebdriverAssociate-#readme",
+  "dependencies": {
+    "chromedriver": "^74.0.0",
+    "geckodriver": "^1.14.1",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "@rajch/numberstowords": "^0.2.1",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1"
+  }
+}

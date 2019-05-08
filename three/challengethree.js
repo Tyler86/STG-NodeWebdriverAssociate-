@@ -38,7 +38,7 @@ describe("challenge1 suite", function(){
     console.log("-------------------------------------------------------------")
     for(var i =0; i< listOfpopularElements.length; i++){
         
-        console.log(i +" - "+await listOfpopularElements[i].getText() +" : " + await listOfpopularElements[i].getAttribute("href"));
+        console.log((i+1) +" - "+await listOfpopularElements[i].getText() +" : " + await listOfpopularElements[i].getAttribute("href"));
 
     }
 
