@@ -26,7 +26,7 @@ describe("challenge 8", function () {
    after(async function () {
    });
 
-   it("run suit", async function () {
+   it("get service data from copart for cars", async function () {
 
       var data = { query: "civic", page: 0, size: 50, start: 0, watchListOnly: false, freeFormSearch: true }
 
