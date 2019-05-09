@@ -5,14 +5,14 @@ var By = webdriver.By;
 var Key = webdriver.Key;
 var until = webdriver.until;
 var setup = require('../common/setup');
+var wait = require('../common/customWaits');
 
-var tearDown = require('../common/tearDown.js');
-var screenshot = require('../common/takeScreenShots.js');
-var customWaits = require('../common/customWaits.js');
+var tearDown = require('../common/tearDown');
+var screenshot = require('../common/takeScreenShots');
 var driver;
 
 
-
+var axios = require('axios');
 
 
 describe("challenge1 suite", function () {
@@ -29,9 +29,14 @@ describe("challenge1 suite", function () {
 
 
 
-   it("connect to service", async function () {
+
+   it("run suit", async function () {
 
 
+     
+      let response = await axios.post('https://www.copart.com/public/lots/search',{query:'civic'})
+      console.log(response.data)
    });
+
 
 });
