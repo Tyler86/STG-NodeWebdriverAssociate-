@@ -5,10 +5,10 @@ var By = webdriver.By;
 var Key = webdriver.Key;
 var until = webdriver.until;
 var setup = require('../common/setup').setup;
-var wait = require('../common/customWaits');
-
 var tearDown = require('../common/tearDown').teardown;
 var screenshot = require('../common/takeScreenShots');
+var crawler = require('../common/crawler');
+
 
 
 var axios = require('axios');
@@ -20,8 +20,10 @@ describe("challenge 10", function () {
 
     before(async function () {
         url = "https://copart.com"
-        driver = setup()
+        url = "https://google.com"
 
+        driver = setup(url)
+        crawler.setVariables(driver,url)
     });
 
     after(async function () {
@@ -29,10 +31,6 @@ describe("challenge 10", function () {
     });
 
     it("web crawler", async function () {
-
+       await crawler.getLinks();
     });
-
-
-
-
 });

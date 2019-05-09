@@ -28,13 +28,8 @@ describe("challenge 8", function () {
 
    it("get service data from copart for cars", async function () {
 
-      var data = { query: "civic", page: 0, size: 50, start: 0, watchListOnly: false, freeFormSearch: true }
-
-      let response = await axios.post('https://www.copart.com/public/lots/search');
+      var searchTerm = "honda";
+      let response = await axios.post('https://www.copart.com/public/lots/search/?free=true&query=' + searchTerm);
       console.log(response.data.data.results.content[0])
    });
-
-
-
-
 });

@@ -28,11 +28,10 @@ describe("challenge 9", function () {
 
     it("get service data and validate formats", async function () {
 
-        var data = { query: "civic", page: 0, size: 50, start: 0, watchListOnly: false, freeFormSearch: true }
-
-        let response = await axios.post('https://www.copart.com/public/lots/search');
-        var car =response.data.data.results.content[0];
-       // console.log(response.data.data.results.content[0]);
+        var searchTerm = "toyota";
+        let response = await axios.post('https://www.copart.com/public/lots/search/?free=true&query=' + searchTerm);
+        var car = response.data.data.results.content[0];
+        // console.log(response.data.data.results.content[0]);
         validateData(car);
     });
 
@@ -51,13 +50,13 @@ function validateData(car) {
     }
 
 
-var keys = Object.keys(car)
+    var keys = Object.keys(car)
 
-keys.forEach(key => {
-    console.log(key + "....." + typeof key)
-    
-    //console.log("field:"+key + " -- type:" + typeof key)
-});
+    keys.forEach(key => {
+        console.log("Key-"+key + " .. Value-"+ car[key]+" ..Type-" + typeof car[key])
+
+        //console.log("field:"+key + " -- type:" + typeof key)
+    });
 
 
 
