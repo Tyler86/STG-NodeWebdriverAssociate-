@@ -5,7 +5,7 @@ var By = webdriver.By;
 var Key = webdriver.Key;
 
 
-describe("challenge1 suite", function(){
+describe("challenge 1", function(){
    this.timeout(60000);
    var driver;
    before(function () {

@@ -7,7 +7,7 @@ var until = webdriver.until;
 var driver;
 var fs = require('fs');
 
-describe("challenge1 suite", function(){
+describe("challenge 6", function(){
    this.timeout(40000);
 
    before(function(){

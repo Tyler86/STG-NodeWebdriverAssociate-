@@ -10,27 +10,23 @@ var convertNumberToString = require("./common/numberToString").convertNumberToSt
 
 
 
-describe("challenge1 suite", function(){
-   before(function () {
-   });
+describe("challenge 4", function () {
+    before(function () {
+    });
 
-   after(function () {
-   });
+    after(function () {
+    });
 
 
 
-   it("call the fibanacci function", function() {
-       var fibNumber;
-    for (let i = 0; i < 25; i++) {
-        fibNumber = fibonacci(i);
-        console.log("sequence: "+i+" - Fib: " +fibNumber + " - " + convertNumberToString(fibNumber));
-   
-    }
+    it("call the fibanacci function", function () {
+        var fibNumber;
+        for (let i = 0; i < 25; i++) {
+            fibNumber = fibonacci(i);
+            console.log("sequence: " + i + " - Fib: " + fibNumber + " - " + convertNumberToString(fibNumber));
 
-       //let = results =  numberstowords.toInternationalWords(fibanacci(sequencenumber));
-       //console.log("Using npm file --- " + results)
-      
-    });  
+        }
+    });
 });
 
 

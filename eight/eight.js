@@ -15,7 +15,7 @@ var driver;
 var axios = require('axios');
 
 
-describe("challenge1 suite", function () {
+describe("challenge 8", function () {
    this.timeout(200000); // this test has 3 minutes and 20 seconds to run before it is forced to stop
 
 
@@ -24,19 +24,17 @@ describe("challenge1 suite", function () {
    });
 
    after(async function () {
-
    });
-
-
-
 
    it("run suit", async function () {
 
+      var data = { query: "civic", page: 0, size: 50, start: 0, watchListOnly: false, freeFormSearch: true }
 
-     
-      let response = await axios.post('https://www.copart.com/public/lots/search',{query:'civic'})
-      console.log(response.data)
+      let response = await axios.post('https://www.copart.com/public/lots/search');
+      console.log(response.data.data.results.content[0])
    });
+
+
 
 
 });

@@ -6,7 +6,7 @@ var Key = webdriver.Key;
 var until = webdriver.until;
 
 
-describe("challenge1 suite", function(){
+describe("challenge 3", function(){
    this.timeout(20000);
    var driver;
 

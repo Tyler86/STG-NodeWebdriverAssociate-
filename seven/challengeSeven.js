@@ -13,7 +13,7 @@ var navigateTo = require("./common/navigateTo")
 var driver;
 
 
-describe("challenge1 suite", function () {
+describe("challenge 7", function () {
    this.timeout(200000); // this test has 3 minutes and 20 seconds to run before it is forced to stop
 
 
