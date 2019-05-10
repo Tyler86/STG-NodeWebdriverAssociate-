@@ -20,8 +20,7 @@ describe("challenge 10", function () {
 
     before(async function () {
         url = "https://copart.com"
-        url = "https://google.com"
-
+        url = "https://microsoft.com"
         driver = setup(url)
         crawler.setVariables(driver,url)
     });
@@ -31,6 +30,13 @@ describe("challenge 10", function () {
     });
 
     it("web crawler", async function () {
-       await crawler.getLinks();
+        try {
+       await crawler.crawlPages();
+        } catch (error) {
+            console.log("something when wrong during the crawl")
+            //console.log(error)
+        } finally{ 
+       await crawler.printReport();
+        }
     });
 });
